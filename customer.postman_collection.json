@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "c9076f74-161c-412a-bb47-34631301aa70",
+		"name": "customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Delete : test",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "bhjtudrsetfg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n    \"name\": \"test_two\",\r\n    \"salary\": \"123\",\r\n    \"age\": \"23\"\r\n},\r\n{\r\n    \"name\": \"srikanth\",\r\n    \"salary\": \"100\",\r\n    \"age\": \"31\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8124/api/test/test_two",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"test",
+						"test_two"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "buivtdrtstrd",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get : /hello",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "favfdrgegerg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8124/api/hello?Foo=bar&test=true&check=yes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"hello"
+					],
+					"query": [
+						{
+							"key": "Foo",
+							"value": "bar"
+						},
+						{
+							"key": "test",
+							"value": "true"
+						},
+						{
+							"key": "check",
+							"value": "yes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post : world",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer cloud-platform",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "access_token",
+						"value": "yutrt",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test_two\",\r\n    \"salary\": \"123\",\r\n    \"age\": \"23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8124/api/world",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"world"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
